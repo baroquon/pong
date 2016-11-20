@@ -1,0 +1,34 @@
+html, html *{
+  box-sizing: border-box;
+}
+html{
+  height: 100%;
+  padding: 0;
+}
+body{
+  background-color: #222;
+  border: 1px solid #ddd;
+  padding: 0;
+  height: 90%;
+}
+.game-paddle,
+.game-ball{
+  position: absolute;
+  background-color: #ddd;
+  width: 10px;
+  transition: top 1s, left 1s;
+}
+.game-paddle{
+  height: 60px;
+}
+.game-paddle#left-paddle{
+  left: 8px;
+}
+.game-paddle#right-paddle{
+  right: 8px;
+}
+.game-ball{
+  height: 10px;
+  left: 30%;
+  top: 70%;
+}

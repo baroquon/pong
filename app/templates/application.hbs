@@ -1,0 +1,5 @@
+{{#board-container as |gamePositions|}}
+  {{game-paddle id="left-paddle" position=gamePositions.initialPositions.leftPosition}}
+  {{game-paddle id="right-paddle" position=gamePositions.initialPositions.rightPosition}}
+  {{game-ball position=gamePosition.initialPositions.ballPosition}}
+{{/board-container}}
